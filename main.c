@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include <stdlib.h>
+	int cantidad_comunas = 0;
+	int bienes = 0;
+	int servicios = 0;
+
+void saludo_inicio(){
+	// Funcion de impresion del logo y saludo inicial
+	printf("\033[33m                      \\ | /");
+	printf("\033[33m\n                    --- ☀ ---");
+	printf("\033[33m\n                      / | \\");
+	printf("\033[32m\n\n             /\\        /\\        /\\");
+	printf("\033[32m\n            /  \\  /\\  /  \\  /\\  /  \\");
+	printf("\033[32m\n           /    \\/  \\/    \\/  \\/    \\");
+	printf("\033[32m\n          /______\\__ \\____/____\\_____\\");
+	printf("\033[0m\n            ╔═════════════════════╗");
+	printf("\n            ║ Comunas Anarquistas ║");
+	printf("\n            ╚═════════╤═╤═════════╝");
+	printf("\n                     ╱ │ ╲");
+	printf("\n                    ╱  │  ╲");
+	printf("\n                 ──┴───┴───┴──");
+	printf("\n\n\nBienvenid@ a la simulacion: Una sociedad solarpunk de comunas anarquistas");
+	printf("\n\n      Hecho por: Paula Flores Solano y Samuel Ureña Gonzalez");
+	printf("\n\n                Estructuras de Datos, IIS 2026");
+}
+
+void configuracion_inicial(){
+	
+	int correcto = 0; // ayuda para hacer validaciones
+	
+	// Funcion que pide los valores de las comunas, bienes y servicios que el usuario pidas y los coloca en variables globales
+	
+	int cant_bienes = 0;
+	int cant_comunas = 0;
+	int cant_servicios = 0;
+	
+	//pedir cantidad comunas
+	
+	printf("\n\nInserte la cantidad de comunas que quiere (entre 1 y 500): ");
+	scanf("%d", &cant_comunas);
+	
+	while(correcto == 0){
+		if(cant_comunas < 1 || cant_comunas > 500){
+			printf("\033[31m\nValor invalido.");
+			printf("\033[0m Inserte la cantidad de comunas que quiere (entre 1 y 500): ");
+			scanf("%d", &cant_comunas);
+		}else{
+			cantidad_comunas = cant_comunas;
+			correcto = 1;
+		}
+	}
+	
+	correcto = 0;
+	
+	//pedir cantidad bienes
+	printf("\n\nInserte la cantidad de bienes que quiere (entre 1 y 20): ");
+	scanf("%d", &cant_bienes);
+	while(correcto == 0){
+		if(cant_bienes < 1 || cant_bienes > 20){
+			printf("\033[31m\nValor invalido.");
+			printf("\033[0m Inserte la cantidad de bienes que quiere (entre 1 y 20): ");
+			scanf("%d", &cant_bienes);
+		}else{
+			bienes = cant_bienes;
+			correcto = 1;
+		}
+	}
+		
+	correcto = 0;
+		
+	//pedir cantidad servicios
+	printf("\n\nInserte la cantidad de servicios que quiere (entre 1 y 20): ");
+	scanf("%d", &cant_servicios);
+	while(correcto == 0){
+		if(cant_servicios < 1 || cant_servicios > 20){
+			printf("\033[31m\nValor invalido.");
+			printf("\033[0m Inserte la cantidad de servicios que quiere (entre 1 y 20): ");
+			scanf("%d", &cant_servicios);
+		}else{
+			servicios = cant_servicios;
+			correcto = 1;
+		}
+	}
+		
+	
+	
+	}
+
+int main(){
+	
+	saludo_inicio();
+	configuracion_inicial();
+	
+	}
+	
