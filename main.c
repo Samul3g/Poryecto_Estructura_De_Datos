@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+	//Variables globales
 	int cantidad_comunas = 0;
 	int bienes = 0;
 	int servicios = 0;
+
 
 void saludo_inicio(){
 	// Funcion de impresion del logo y saludo inicial
@@ -25,11 +28,13 @@ void saludo_inicio(){
 }
 
 void configuracion_inicial(){
-	
-	int correcto = 0; // ayuda para hacer validaciones
+	saludo_inicio();
 	
 	// Funcion que pide los valores de las comunas, bienes y servicios que el usuario pidas y los coloca en variables globales
 	
+	int correcto = 0; // ayuda para hacer validaciones
+	
+	//variables locales
 	int cant_bienes = 0;
 	int cant_comunas = 0;
 	int cant_servicios = 0;
@@ -87,9 +92,9 @@ void configuracion_inicial(){
 	}
 
 int main(){
-	
-	saludo_inicio();
 	configuracion_inicial();
+	
+	return 0;
 	
 	}
 	
