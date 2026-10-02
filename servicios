@@ -1,20 +1,20 @@
-recoleccion de organicos, 63
-mantenimiento de areas verdes, 56
-biblioteca comunitaria, 61
-taller de reparaciones, 69
-comedor comunitario, 88
-huerto urbano compartible, 88
-limpieza de espacios comunes, 83
-prestamo de herramientas, 44
-centro de reciclaje, 62
-cuidado infantil compartido, 55
-centro de acopio, 46
-lavanderia comunal, 48
-red de wifi comunitaria, 98
-vigilancia vecinal, 56
-intercambio de semillas, 65
-taller de carpinteria, 56
-sala de eventos y reuniones, 57
-gestion de compostaje, 63
-apoyo escolar para niños, 78
-transporte compartido, 71
+recoleccion de organicos,true,200,86
+mantenimiento de areas verdes,true,30,60
+biblioteca comunitaria,false,6,70
+taller de reparaciones,true,40,66
+comedor comunitario,true,50,88
+huerto urbano compartible,false,15,47
+limpieza de espacios comunes,false,18,30
+prestamo de herramientas,true,32,50
+centro de reciclaje,true,40,90
+cuidado infantil compartido,false,30,72
+centro de acopio,true,5,73
+lavanderia comunal,false,17,37
+red de wifi comunitaria,true,45,89
+vigilancia vecinal,true,30,92
+intercambio de semillas,true,100,96
+taller de carpinteria,false,25,64
+sala de eventos y reuniones,false,80,59
+gestion de compostaje,false,49,81
+apoyo escolar para niños,true,38,69
+transporte compartido,true,120,91
