@@ -1,6 +1,7 @@
 #include <stdio.g>
 #include <stdlib.h>
 #include <time.h>
+#include "utils.h"
 
 srand(time(NULL)); // inicializa la semilla para usar el random
 
