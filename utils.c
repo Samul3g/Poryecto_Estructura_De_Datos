@@ -7,6 +7,11 @@ srand(time(NULL)); // inicializa la semilla para usar el random
 int random(int minimo, int maximo) {
 	// Funcion que retorna un numero pseudo aleatorio entre el minimo y el maximo dados.
 	
-	return minimo + rand() % (maximo - minimo +1);
+	int numero_random = minimo + rand() % (maximo - minimo +1);
+	return numero_random;
 	
 	}
+
+
+
+
